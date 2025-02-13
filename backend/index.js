@@ -26,7 +26,7 @@ app.use(
 // Routers 
 app.use("/api/auth",authRouter)
 app.use("/api/message",messageRouter)
-app.get('/', (req, res) => res.send('Hello World!'))
+
 if (process.env.NODE_ENV === "production") {
   const frontendPath = path.join(__dirname, "frontend", "dist");
 
